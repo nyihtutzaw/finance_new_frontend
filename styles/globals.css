@@ -1,3 +1,4 @@
+@import "~antd/dist/antd.css";
 html,
 body {
   padding: 0;
@@ -13,4 +14,24 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.searchBox .ant-input-group .ant-input-affix-wrapper:not(:first-child),.searchBox .ant-input-group .ant-input-affix-wrapper:not(:first-child) .ant-input
+{
+    background: #494949 !important;
+    border:none !important;
+    padding:3px 10px;
+    color: white;
+}
+
+.searchBox .ant-input-group > .ant-input:first-child, .ant-input-group-addon:first-child
+{
+  background: #5E5E5E !important;
+  width:100px;
+  border:none !important;
+}
+
+.ant-menu-item-selected {
+  color: #876203  !important; 
+  border-color: #876203  !important;
 }

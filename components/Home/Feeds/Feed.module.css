@@ -1,0 +1,95 @@
+.feedContainer {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.card{
+    box-shadow: 0.3px 5px 3px rgb(214, 213, 213);
+    margin-bottom: 20px;
+}
+
+/*  post info */
+.infoContainer {
+    width:20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile {
+    width:50px;
+    height: 50px;
+    object-position: center;
+    border-radius: 50%;
+}
+.infoTitleContainer {
+    padding-left: 15%;
+    line-height: 10px;
+    height: 50px;
+    padding-top: 10px;
+    
+}
+
+.infoTitleContainer p {
+    font-size: 12px;
+    color:#656B72;
+}
+.moreIcon {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+/*  post info */
+
+
+.postText{
+    font-size: 18px;
+    justify-content: center;
+    padding:0px 10px;
+}
+
+
+/*  post image */
+.postImage {
+    width: 100%;
+}
+.postImageLabel {
+ background: #F2F3F5;   
+ padding:5px 20px;
+ line-height: 20px;
+}
+.postImageLabel h3 {
+    font-size: 15;
+    font-weight: normal;
+}
+
+.postImageLabel p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*  post image */
+
+
+/*  comments */
+
+.commentContainer {
+    display: flex;
+    flex-direction: row;
+    padding:20px 35px;
+    justify-content: space-between;
+}
+
+.commentProfile {
+    width:40px;
+    height: 40px;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.commentTextBox{
+    width: 90%;
+    border: 2px solid #D4D4D4;
+    border-radius:50px;
+}
+
+/*  comments */

@@ -1,0 +1,49 @@
+.marketInfoContainer {
+    margin-top: 10px;
+    padding:0px 10px;
+}
+.cardTitle
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cardTitle h2 span {
+    margin-left: 50px;
+}
+
+.plusIcon {
+    font-size: 25px;
+    color: #C1982D;
+}
+
+/* table */
+.tableHeader,.tableRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.tableHeader div {
+    text-align: right;
+    width: 25%;
+}
+
+.tableTitle{
+    font-size: 16px;
+    color:#656B72  !important;
+}
+
+.tableRow div {
+    text-align: right;
+    width: 25%;
+}
+
+.tableHeader:nth-child(0) div,.tableRow:nth-child(0) div{
+    text-align: left  !important;
+    color: red  !important;
+    
+}
+

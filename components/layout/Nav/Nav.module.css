@@ -1,0 +1,53 @@
+.navbarContainer{
+    height: 120px;
+    background: #303030;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title {
+    background: linear-gradient(93.33deg, #CFB379 0%, #C1982D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 28px;
+    line-height: 32px;
+}
+.subTitle {
+    color: #876203;
+}
+.iconStyle {
+    font-size: 22px;
+}
+.loginButton {
+    background: linear-gradient(93.33deg, #CFB379 0%, #C1982D 100%);
+    border:none;
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    color: #84672C;
+}
+.loginButton:hover {
+    background: linear-gradient(93.33deg, #CFB379 0%, #C1982D 100%);
+}
+.logoContainer {
+    display: flex;
+}
+.logoContainer h1 {
+    margin-left:10px;
+}
+
+.menuContainer {
+    background: transparent;
+    color:white;
+    font-size: 18px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menuItem:hover,.menuItem::selected {
+    color: #876203  !important; 
+    border-color: #876203  !important;
+}

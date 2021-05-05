@@ -1,0 +1,43 @@
+.container {
+    background:#F9F9F9;
+}
+.itemContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:10px 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 14px;
+    border-right: 0.5px solid #D5D5D5;
+}
+
+.shortTitle {
+    font-size: 16px;
+    color: #876203;
+}
+.title {
+    font-size: 14px;
+    color: #D4D4D4;
+}
+.number {
+    font-size:16px;
+}
+.numberDanger {
+    font-size:16px;
+    color:red;
+}
+.numberSuccess {
+    font-size:16px;
+    color:green;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.controlSizedBox {
+    width:40px;
+}
