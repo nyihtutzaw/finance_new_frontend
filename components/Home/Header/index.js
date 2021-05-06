@@ -15,11 +15,11 @@ const Header = () => {
 
     return (
         <Row className={styles.container}>
-            <Col offset={2}></Col>
+            <Col lg={{offset:2}}></Col>
             {
                 headerItems.map((element,index) => {
                     return (
-                        <Col span={3} key={index}>
+                        <Col lg={{span:3}} sm={{span:4}} key={index}>
                             <div className={styles.itemContainer}>
                                 <div>
                                     <p className={styles.shortTitle}>{element.shortTitle}</p>
@@ -35,7 +35,7 @@ const Header = () => {
                     )
                 })
             }
-            <Col span={4} className={styles.buttonContainer}>
+            <Col lg={{span:4}} sm={{span:4}} className={styles.buttonContainer}>
                 <BackwardIcon />
                 <div className={styles.controlSizedBox}></div>
                 <ForwardIcon />

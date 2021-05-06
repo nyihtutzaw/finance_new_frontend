@@ -12,7 +12,7 @@
 .actionButtons {
     display: flex;
     flex-direction: row;
-    
+    flex-wrap: wrap;
 }
 
 .actionButton {

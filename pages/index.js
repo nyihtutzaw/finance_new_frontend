@@ -2,20 +2,20 @@ import { Row,Col } from 'antd';
 import Header from './../components/Home/Header'
 import Feeds from './../components/Home/Feeds';
 import MarketInfo from './../components/Home/MarketInfo';
-import styles from './../styles/Home.module.css';
+import NewsContainer from './../components/Home/NewsContainer';
 export default function Home() {
   return (
     <>
       <Header />
-      <Row className={styles.container}>
-        <Col span={10}>
+      <Row>
+        <Col lg={{span:9,order:1}} md={{span:14,offset:1,order:1}} xs={{span:23,offset:1,order:3}}>
           <Feeds />
         </Col>
-        <Col span={8}>
+        <Col lg={{span:7,offset:0,order:2}} md={{span:9,offset:0,order:2}} xs={{span:23,offset:1,order:2}}>
           <MarketInfo />
         </Col>
-        <Col span={6}>
-          <h1>Three</h1>
+        <Col lg={{span:6,order:3}} xs={{order:1}}>
+           <NewsContainer />
         </Col>
       </Row>
     </>

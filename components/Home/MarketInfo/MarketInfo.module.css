@@ -2,11 +2,15 @@
     margin-top: 10px;
     padding:0px 10px;
 }
+.card {
+    margin-bottom: 30px;
+}
 .cardTitle
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 .cardTitle h2 span {
     margin-left: 50px;
@@ -16,34 +20,66 @@
     font-size: 25px;
     color: #C1982D;
 }
-
 /* table */
 .tableHeader,.tableRow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 5px;
+    align-items: center;
+}
+.tableRowContainer {
+    
+    border-bottom: 1px solid #D5D5D5;
+}
+.tableHeader{
     border-bottom: 1px solid #D5D5D5;
 }
 
-.tableHeader div {
+.tableRow,.tableRow p{
+    border:none;
+    padding:0px !important;
+    margin: 0px !important;
+}
+
+.tableHeader div,.tableRow div  {
     text-align: right;
     width: 25%;
 }
 
-.tableTitle{
+.tableTitle,.tableData{
     font-size: 16px;
     color:#656B72  !important;
 }
 
-.tableRow div {
-    text-align: right;
-    width: 25%;
+.tableTitleFirst,.tableDataFirst {
+    text-align: left !important;
+}
+.tableDataFirst{
+    color:#876203 !important;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.tableHeader:nth-child(0) div,.tableRow:nth-child(0) div{
-    text-align: left  !important;
-    color: red  !important;
-    
+.longSymbol {
+    width: 100%;
+    color:  #656B72 !important;
 }
+
+
+.normalText {
+    color:black !important;
+    font-weight: bold;
+}
+
+.successText {
+    color:green !important;
+    font-weight: bold;
+}
+
+.dangerText {
+    color:red !important;
+    font-weight: bold;
+}
+
+
 

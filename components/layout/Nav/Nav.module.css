@@ -51,3 +51,38 @@
     color: #876203  !important; 
     border-color: #876203  !important;
 }
+
+.mobileNavbarContainer {
+    height: 80px;
+    background: #303030;
+    display: none;
+}
+
+.mobileNavIcon {
+    font-size: 40px;
+    color: #CFB379;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .navbarContainer{
+        height: 150px;
+    }
+
+    .menuContainer{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    .navbarContainer{
+        display: none;
+    }
+
+    .mobileNavbarContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

@@ -41,3 +41,10 @@
 .controlSizedBox {
     width:40px;
 }
+
+
+@media only screen and (max-width: 1300px) {
+    .container{
+        display: none;
+    }
+  }
