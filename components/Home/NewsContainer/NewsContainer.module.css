@@ -33,8 +33,57 @@
 }
 
 
+
+@media only screen and (min-width: 1300px) {
+    .mobileNewsListCard{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1300px) {
     .card {
         display: none;
     }
-  }
+
+
+
+    .mobileNewsListCard {
+        display: block;
+        margin-top:20px;
+        padding:5px;
+        max-width: 100%;
+    }
+
+    .newsListMobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        height: 200px;
+        margin:5px;
+        
+        overflow-x: auto;
+    }
+
+    .newItem {
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        min-width:180px !important;
+        border: 1px solid #D5D5D5;
+        box-sizing: border-box;
+        margin-right: 20px;
+    }
+
+ 
+    
+    .caption p ,.caption span{
+        font-size:12px;
+        text-align: justify;
+    }
+
+    .newItem img {
+        width:100%;
+        
+    }
+
+}

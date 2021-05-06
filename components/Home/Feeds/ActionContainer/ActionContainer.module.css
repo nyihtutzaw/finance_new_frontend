@@ -6,20 +6,18 @@
     margin-right: 20px;
     align-items: center;
     padding-top: 10px;
-    
-    
 }
 .actionButtons {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    
 }
 
 .actionButton {
     width: 130px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     
 }
 .actionButton p {
@@ -38,3 +36,18 @@
     font-size:16px;
     margin-right: 10px;
 }
+
+@media only screen and (max-width: 630px){
+    .activityContainer p {
+        font-size:14px;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 1400px){
+    .actionButtons .actionButton {
+        width: 80px;
+    }
+}
+
+

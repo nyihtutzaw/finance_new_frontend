@@ -5,7 +5,7 @@ const MenuBar = () => {
         { title: "Home", key: "home" },
         { title: "Markets", key: "markets" },
         { title: "News", key: "news" },
-        { title: "portfolio", key: "portfolio" },
+        { title: "Portfolio", key: "portfolio" },
     ]
     return (
         <Row>
