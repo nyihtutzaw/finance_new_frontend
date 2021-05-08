@@ -1,6 +1,6 @@
 import '../styles/globals.css'
+import { wrapper } from "../redux/store"
 import MainContainer from '../components/layout/MainContainer'
-
 function MyApp({ Component, pageProps }) {
   return (
     <MainContainer>
@@ -8,5 +8,4 @@ function MyApp({ Component, pageProps }) {
     </MainContainer>
   )
 }
-
-export default MyApp
+export default wrapper.withRedux(MyApp);

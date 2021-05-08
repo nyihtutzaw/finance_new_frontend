@@ -10,7 +10,7 @@ const ActionContainer = ({data}) => {
         <>
         <div className={styles.actionContainer}>
             <div className={styles.actionButtons}>
-                <Button icon={<LikeIcon />} value={data.like} />
+                <Button icon={<LikeIcon />} value={data.likes} />
                 <Button icon={<UpIcon />} value={data.up} />
                 <Button icon={<DownIcon />} value={data.down} />
             </div>

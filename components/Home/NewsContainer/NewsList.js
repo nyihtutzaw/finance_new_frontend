@@ -1,32 +1,22 @@
+import { API_ENDPOINT } from './../../../constants.js';
 import styles from './NewsContainer.module.css';
-
-const news=[
-    {body:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",image:"https://blog.playstation.com/tachyon/2019/10/unnamed-file-45.jpg?resize=1088,500&crop_strategy=smart",website:"Trading.com"},
-    {body:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",image:"https://blog.playstation.com/tachyon/2019/10/unnamed-file-45.jpg?resize=1088,500&crop_strategy=smart",website:"Trading.com"},
-    {body:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",image:"https://blog.playstation.com/tachyon/2019/10/unnamed-file-45.jpg?resize=1088,500&crop_strategy=smart",website:"Trading.com"},
-    {body:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",image:"https://blog.playstation.com/tachyon/2019/10/unnamed-file-45.jpg?resize=1088,500&crop_strategy=smart",website:"Trading.com"},
-    {body:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",image:"https://blog.playstation.com/tachyon/2019/10/unnamed-file-45.jpg?resize=1088,500&crop_strategy=smart",website:"Trading.com"},
-    {body:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",image:"https://blog.playstation.com/tachyon/2019/10/unnamed-file-45.jpg?resize=1088,500&crop_strategy=smart",website:"Trading.com"},
-    
-]
-const NewsList=()=>{
+const NewsList = ({ blogLists }) => {
     return (
-       <>
+        <>
             {
-                news.map((element)=>{
+               blogLists.map((element, index) => {
                     return (
-                        <div className={styles.newItem}>
-                        <img src={element.image} />
-                        <div className={styles.caption}>
-                            <p>{element.body}</p>
-                            <span>{element.website}</span>
+                        <div className={styles.newItem} key={index}>
+                            <img src={`${API_ENDPOINT}${element.image.url}`} />
+                            <div className={styles.caption}>
+                                <p>{element.blog.substr(0,120)}</p>
+                                <span>{element.website}</span>
+                            </div>
                         </div>
-                    </div>
                     )
                 })
-            }
+            } *
         </>
     )
 }
-
 export default NewsList;

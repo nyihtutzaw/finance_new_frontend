@@ -1,12 +1,11 @@
 import { Card } from 'antd';
 import NewsList from './NewsList.js';
 import styles from './NewsContainer.module.css';
-
-const NewsContainer=()=>{
+const NewsContainer=({blogLists})=>{
     return (
         <Card className={styles.card} bodyStyle={{padding:"0"}}>
             <h3>News</h3>
-            <NewsList />
+            <NewsList blogLists={blogLists} />
         </Card>
     )
 }
