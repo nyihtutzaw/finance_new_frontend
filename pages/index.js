@@ -7,12 +7,13 @@ import MarketInfo from './../components/Home/MarketInfo';
 import NewsContainer from './../components/Home/NewsContainer';
 import MobileNewsContainer from './../components/Home/NewsContainer/Mobile';
 import Preloader from './../components/Preloader';
-import { getHomePageData } from './../redux/actions';
-const Home = ({ getHomePageData, marketLists, watchLists, feedLists, blogLists }) => {
+import { getHomePageData,getSideData } from './../redux/actions';
+const Home = ({ getHomePageData,getSideData, marketLists, watchLists, feedLists, blogLists }) => {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     async function fetchMyAPI() {
       setLoading(true);
+      await getSideData();
       await getHomePageData();
       setLoading(false);
     }
@@ -48,6 +49,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = {
-  getHomePageData
+  getHomePageData,
+  getSideData
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Home)

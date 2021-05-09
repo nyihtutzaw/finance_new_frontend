@@ -35,6 +35,10 @@
     border-bottom: 1px solid #D5D5D5;
 }
 
+.tableRow {
+    cursor: pointer;
+}
+
 .tableRow,.tableRow p{
     border:none;
     padding:0px !important;
